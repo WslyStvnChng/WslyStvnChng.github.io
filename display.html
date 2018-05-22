@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./css/icon-font.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/icon-font.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+  <title>Steven Cheng || Portfolio</title>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">What I Know</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">More About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+    <div class="header__logo-box">
+      <img src="./assets/images/barry.jpg" alt="Logo" class="header__logo">
+    </div>
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main" id="title-primary">Steven||Cheng</span>
+        <span class="heading-primary--sub">Full Stack Developer</span>
+      </h1>
+      <!-- <a href="#" class="btn btn--white btn--animated">Portfolio</a> -->
+    </div>
+  </header>
+
+  <main>
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          About this Developer
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary">
+            You're going to fall in love with
+          </h3>
+          <p class="paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <h3 class="heading-tertiary">
+            Live adventures like you never have been
+          </h3>
+          <p class="paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <a href="#" class="btn-text">Learn more &rarr;</a>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img src="assets/images/nat-5.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1">
+            <img src="assets/images/nat-6.jpeg" alt="Photo 2" class="composition__photo composition__photo--p2">
+            <img src="assets/images/nat-7.jpeg" alt="Photo 3" class="composition__photo composition__photo--p3">
+          </div>
+        </div>
+    </section>
+    <section class="section-features">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          What I Know
+        </h2>
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">HTML</h3>
+              <p class="faeture-box__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-notebook"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Sass</h3>
+              <p class="faeture-box__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">MERN</h3>
+              <p class="faeture-box__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-laptop"></i>
+              <h3 class="heading-tertiary u-margin-bottom-8">JavaScript</h3>
+              <p class="faeture-box__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section-tours">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          My Recent Work
+        </h2>
+        <p>
+          Here are a few recent projects. Want to see more, click the button below!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <!-- <span class="card__heading-span card__heading-span--1">Pico Project</span> -->
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>
+                    <b>TOOLS</b>
+                  </li>
+                  <li>Mongo DB</li>
+                  <li>Express</li>
+                  <li>React JS</li>
+                  <li>Node JS</li>
+                  <li>Materialize Framework</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <!-- <p class="card__price-only">Something</p> -->
+                  <p class="card__price-value">Click Here</p>
+                </div>
+                <a href="http://www.picoprojects.us/" class="btn btn--white">DEMO</a>
+                <a href="https://github.com/WslyStvnChng/PicoProject" class="btn btn--white">CODE</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <!-- <span class="card__heading-span card__heading-span--2">TrailBlazer</span> -->
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>
+                    <b>TOOLS</b>
+                  </li>
+                  <li>JavaScript</li>
+                  <li>API/AJAX</li>
+                  <li>HTML & CSS 5</li>
+                  <li>Google Firebase</li>
+                  <li>Materialize Framework</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <!-- <p class="card__price-only">Something</p> -->
+                  <p class="card__price-value">Click Here</p>
+                </div>
+                <a href="https://wslystvnchng.github.io/TrailBlazer-App/" class="btn btn--white">DEMO</a>
+                <a href="https://github.com/WslyStvnChng/TrailBlazer-App" class="btn btn--white">CODE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <!-- <span class="card__heading-span card__heading-span--3"></span> -->
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>
+                    <b>TOOLS</b>
+                  </li>
+                  <li>React JS</li>
+                  <li>Express</li>
+                  <li>Node JS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <!-- <p class="card__price-only">Something</p> -->
+                  <p class="card__price-value">Click Here</p>
+                </div>
+                <a href=" https://immense-ridge-52947.herokuapp.com/" class="btn btn--white">DEMO</a>
+                <a href=" https://github.com/WslyStvnChng/memory-game" class="btn btn--white">CODE</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-center-text u-margin-top-huge">
+        <a href="https://github.com/WslyStvnChng" class="btn btn--blue">See more on Github</a>
+      </div>
+    </section>
+
+    <section class="section-aboutme">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="assets/images/Evening_breeze.mp4" type="video/mp4">
+          <source src="assets/images/Evening_breeze.webm" type="video/web"> Your browser is not supported!
+        </video>
+      </div>
+      <div class="u-center-text u-margin-bottom-medium">
+        <h2 class="heading-secondary">
+          About This Developer
+        </h2>
+      </div>
+      <div class="row">
+        <div class="aboutme">
+          <figure class="aboutme__shape">
+            <img src="assets/images/nat-1.jpg" alt="Me" class="aboutme__img">
+            <!-- <figcaption class="aboutme__caption">
+              Steven Cheng
+            </figcaption> -->
+          </figure>
+          <div class="aboutme__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">I enjoy fishing and snowboarding</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Get In Touch
+                </h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full Name</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              <div class="form__group">
+                <button class="btn btn--blue">Submit Your Info &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <!-- <img src="" alt="Full Logo" class="footer__logo"> -->
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">LinkedIn</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Github</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-1-of-2">
+        <p class="footer__copyright">
+          Built my portfolio using
+          <a href="https://www.udemy.com/user/jonasschmedtmann/" class="footer__link">Jonas Schedtmann from his online course
+            <a href="https://www.udemy.com/advanced-css-and-sass/" class="footer__link">Advanced CSS and SASS</a>. Copright &copy; by Jonas Schedtmann. You are 100% allowed to used this webpage for
+            both personal and commericial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- <div class="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="assets/images/nat-11.jpeg" alt="" class="popup__img">
+        <img src="assets/images/nat-10.jpeg" alt="" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <h2 class="heading-secondary u-margin-bottom-medium">Look at me</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms</h3>
+        <p class="popup__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a href="#" class="btn btn--blue">Demo Now</a>
+      </div>
+    </div>
+  </div> -->
+  <!-- 
+  <section class="grid-test">
+    <div class="row">
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+      <div class="col-2-of-3">
+        Col 2 of 3
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-2-of-4">
+        Col 2 of 4
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+      <div class="col-3-of-4">
+        Col 3 of 4
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+
+
+  <!-- Custom Javascript -->
+  <!-- <script type="text/javascript" src="assets/javascript/main.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.composition {
+    position: relative;
+    &__photo {
+        width: 35%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem; 
+        
+        // Selfie
+        &--p1 {
+            left: 110px;
+            top: 1rem;
+            // z-index: 3;
+        } 
+        
+        // With Barry
+        &--p2 {
+            right: 80px;
+            top: 2rem;
+            // z-index: 2;
+        } 
+        
+        // Group Photo
+        &--p3 {
+            left: 4%;
+            top: 2rem;
+            // z-index: 1;
+        }
+        &:hover {
+            outline: 0.6rem solid rgba($color-grey-dark, .5);
+            transform: scale(1.05) translateY(-5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+    // composition:hover composition__photo:not("hover)
+
+    &:hover &__photo:not(:hover) {
+      transform: scale(.95);
+
+    }
+}
