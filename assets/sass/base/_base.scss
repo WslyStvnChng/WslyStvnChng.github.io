@@ -30,3 +30,9 @@ body {
 }
 }
 
+// the selector of the cards
+::selection {
+    background-color: $color-primary;
+    color: $color-primary-dark;
+}
+

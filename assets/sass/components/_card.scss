@@ -5,6 +5,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+
     &__side {
         height: 52rem;
         transition: all .8s ease;
@@ -17,10 +18,15 @@
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        // Front side of the card
         &--front {
             background-color: $color-white;
         }
+
+        // Back side of the card with added color to each card
         &--back {
+            // Rotates the card in 180deg axis
             transform: rotateY(180deg);
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
@@ -33,18 +39,23 @@
             }
         }
     }
-
+    // Hover effect when cursor is over the card
     &:hover &__side--front {
+        // -180deg makes the rotation look like it coming at you
         transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
-    } // Front Side Styling
+    } 
+    
+    // Front Side Styling
     &__picture {
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
+
+        // -webkit clip path allows the angle of the cut of the card and to allow it to work in certain browsers
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
@@ -59,7 +70,7 @@
             background-image: url(../images/lol.png);
         }
     }
-
+    // Heading of the cards
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;
@@ -131,7 +142,10 @@
 
 
 
-    @include respond(tab-port) {
+    // @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
+
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
