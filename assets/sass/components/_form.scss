@@ -17,6 +17,11 @@
     display: block;
     transition: all .3s;
 
+    @include respond(tab-port) {
+      height: auto;
+      width: auto;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, .1);

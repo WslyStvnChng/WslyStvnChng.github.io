@@ -169,6 +169,14 @@ body {
   padding-left: 9rem;
   font-size: 2.5rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .aboutme {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 6.5rem; } }
+  @media (max-width: 37.5em) {
+    .aboutme {
+      transform: skewX(0); } }
   .aboutme__shape {
     width: 15rem;
     height: 15rem;
@@ -180,11 +188,20 @@ body {
     overflow: hidden;
     position: relative;
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .aboutme__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .aboutme__img {
     width: 130%;
     backface-visibility: hidden; }
   .aboutme__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .aboutme__text {
+        transform: skewX(0); } }
+    @media (max-width: 37.5em) {
+      .aboutme__text {
+        transform: skewX(0); } }
 
 .bg-video {
   position: absolute;
@@ -225,14 +242,14 @@ body {
   box-shadow: 0 0.5rem 6rem rgba(119, 119, 119, 0.2); }
 
 .btn--white {
-  background-color: #2d7aee;
+  background-color: #ffffff;
   /* text-shadow: .1rem .1rem; */
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
 
 .btn--blue {
-  background-color: #2d7aee;
+  background-color: #ffffff;
   /* text-shadow: .1rem .1rem; */
   color: #000; }
   .btn--blue::after {
@@ -280,7 +297,7 @@ body {
   position: relative;
   height: 52rem; }
   .card__side {
-    height: 45rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -306,7 +323,7 @@ body {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 20rem;
+    height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -333,7 +350,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(252, 255, 167, 0.85), rgba(36, 171, 255, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(252, 255, 167, 0.55), rgba(36, 171, 255, 0.55)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(252, 255, 167, 0.85), rgba(36, 171, 255, 0.85)); }
     .card__heading-span--3 {
@@ -355,7 +372,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     text-align: center; }
   .card__price-box {
     text-align: center;
@@ -367,6 +384,34 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .composition {
   position: relative; }
@@ -454,6 +499,10 @@ body {
   width: 86%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      height: auto;
+      width: auto; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -501,9 +550,25 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: all .2s .1s; }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: auto; } }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        width: auto; } }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        display: block;
+        position: relative; } }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        vertical-align: middle; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: block; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
@@ -512,6 +577,12 @@ body {
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        display: none; } }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -813,10 +884,10 @@ body {
 
 .section-aboutme {
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
   @media (max-width: 56.25em) {
     .section-aboutme {
-      padding: 10rem 0; } }
+      padding: 5rem 0; } }
 
 .section-book {
   padding: 15rem 0;
@@ -826,11 +897,23 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 50%), url(../images/nat-8.jpeg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/nat-8.jpeg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../images/nat-8.jpeg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/nat-8.jpeg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
