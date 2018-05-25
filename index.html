@@ -11,7 +11,7 @@
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
 
-  <!-- <link rel="stylesheet" href="assets/css/icon-font.css"> -->
+  <link rel="stylesheet" href="assets/css/icon-font.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <title>Steven Cheng || Portfolio</title>
 </head>
@@ -29,19 +29,19 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">About</a>
+          <a href="#section-about" class="navigation__link">About</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">What I Know</a>
+          <a href="#section-features" class="navigation__link">What I Know</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Projects</a>
+          <a href="#section-tours" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">More About</a>
+          <a href="#aboutme" class="navigation__link">More About</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Contact</a>
+          <a href="#book" class="navigation__link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -61,7 +61,7 @@
   </header>
 
   <main>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
         </h2>
@@ -70,7 +70,7 @@
       <div class="row">
         <div class="col-1-of-2">
           <h3 class="heading-tertiary">
-            -Hello! I'm Steven Cheng, a Full Stack Developer.
+            Hello!
           </h3>
           <p class="paragraph">
             I have the passion to dissect problems using reasoning and critical thinking to solve puzzles. With the love of my passions
@@ -95,18 +95,26 @@
           </div>
         </div>
     </section>
-    <section class="section-features">
-      <div class="u-center-text u-margin-bottom-small">
+    <section class="section-features" id="section-features">
+      <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
-          What I Do
+          What I Know
         </h2>
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Front-end</h3>
-              <p class="faeture-box__text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p class="feature-box__text">
+                <div class="card__details">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                  </ul>
+                </div>
               </p>
             </div>
           </div>
@@ -115,28 +123,52 @@
               <i class="feature-box__icon icon-basic-notebook"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Back-end</h3>
               <p class="faeture-box__text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="card__details">
+                <ul>
+                  <li>Mongo DB</li>
+                  <li>Express</li>
+                  <li>Node JS</li>
+                  <li>MySQL &nbsp;</li>
+                  <li>Sequelize</li>
+                </ul>
+              </div>
               </p>
             </div>
           </div>
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-map"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">MERN</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">Framework</h3>
               <p class="faeture-box__text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="card__details">
+                <ul>
+                  <li>BootStrap</li>
+                  <li>Materialize</li>
+                  <li>Rsponsive Grid System</li>
+                  <li>Flexbox</li>
+                  <li></li>
+                </ul>
+              </div>
               </p>
             </div>
           </div>
-          <div class="col-1-of-4">
+          <!-- <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-laptop"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">Software</h3>
               <p class="faeture-box__text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="card__details">
+                <ul>
+                  <li>Meditech</li>
+                  <li>Kronos</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
     </section>
 
@@ -145,7 +177,7 @@
         <h2 class="heading-secondary">
           My Recent Work
         </h2>
-        <p>
+        <p class="section__work">
           Here are a few recent projects. Want to see more, click the button below!
         </p>
       </div>
@@ -176,9 +208,9 @@
                   <!-- <p class="card__price-only">Something</p> -->
                   <p class="card__price-value">Click Here</p>
                 </div>
-                <a href="#popup" class="btn btn--white">DEMO</a>
-                <!-- <a href="https://github.com/WslyStvnChng/PicoProject" class="btn btn--white">CODE</a> -->
-
+                <!-- <a href="#popup" class="btn btn--white">DEMO</a> -->
+                <a href="https://github.com/WslyStvnChng/PicoProject" class="btn btn--white">CODE</a>
+                <a href="http://www.picoprojects.us/" class="btn btn--white">DEMO</a>
               </div>
             </div>
           </div>
@@ -191,7 +223,7 @@
                 &nbsp;
               </div>
               <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">TrailBlazer</span>
+                <!-- <span class="card__heading-span card__heading-span--2">TrailBlazer</span> -->
               </h4>
               <div class="card__details">
                 <ul>
@@ -209,8 +241,9 @@
                   <!-- <p class="card__price-only">Something</p> -->
                   <p class="card__price-value">Click Here</p>
                 </div>
-                <a href="#popup" class="btn btn--white">DEMO</a>
+                <!-- <a href="#popup" class="btn btn--white">DEMO</a> -->
                 <a href="https://github.com/WslyStvnChng/TrailBlazer-App" class="btn btn--white">CODE</a>
+                <a href="https://wslystvnchng.github.io/TrailBlazer-App/" class="btn btn--white">DEMO</a>
               </div>
             </div>
           </div>
@@ -241,8 +274,9 @@
                   <!-- <p class="card__price-only">Something</p> -->
                   <p class="card__price-value">Click Here</p>
                 </div>
-                <a href="#popup" class="btn btn--white">DEMO</a>
+                <!-- <a href="#popup" class="btn btn--white">DEMO</a> -->
                 <a href=" https://github.com/WslyStvnChng/memory-game" class="btn btn--white">CODE</a>
+                <a href=" https://immense-ridge-52947.herokuapp.com/" class="btn btn--white">DEMO</a>
               </div>
             </div>
           </div>
@@ -269,19 +303,18 @@
       <div class="row">
         <div class="aboutme">
           <figure class="aboutme__shape">
-            <img src="assets/images/nat-1.jpg" alt="Me" class="aboutme__img">
+            <img src="assets/images/headshot1.jpg" alt="Me" class="aboutme__img">
             <!-- <figcaption class="aboutme__caption">
               Steven Cheng
             </figcaption> -->
           </figure>
-          <div class="aboutme__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">Hello</h3>
+          <div class="aboutme__text" id="aboutme">
+            <h3 class="heading-tertiary u-margin-bottom-small">About</h3>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua..
-
+               I am a Full Stack Developer and Certified Nurse Aide based in Denver, Colorado. Recently graduated from University of Denver’s
+              Full Stack Web Development Program, where I am looking to pursue a career that combines my deep understanding of health care
+              technology with hands-on application of my web development skills. I have a Bachelors of Science in Biochemistry from University
+              of Colorado Denver.
             </p>
           </div>
         </div>
@@ -290,8 +323,8 @@
     <section class="section-book">
       <div class="row">
         <div class="book">
-          <div class="book__form">
-            <form action="#" class="form">
+          <div class="book__form" id="book">
+            <form action="mailto:mr.cheng.st@gmail.com" method="post" enctype="text/plain" class="form">
               <div class="u-margin-bottom-medium">
                 <h2 class="heading-secondary">
                   Get In Touch
@@ -306,7 +339,7 @@
                 <label for="email" class="form__label">Email Address</label>
               </div>
               <div class="form__group">
-                <button class="btn btn--blue">Submit Your Info &rarr;</button>
+                <button class="btn btn--blue" type="submit" vale="Send">Submit Your Info &rarr;</button>
               </div>
             </form>
           </div>
@@ -325,13 +358,13 @@
         <div class="footer__navigation">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#" class="footer__link">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/stvnchng/" class="footer__link">LinkedIn</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Github</a>
+              <a href="https://github.com/WslyStvnChng" class="footer__link">Github</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Instagram</a>
+              <a href="https://www.instagram.com/cousinhoey/" class="footer__link">Instagram</a>
             </li>
           </ul>
         </div>
@@ -349,7 +382,7 @@
     </div>
   </footer>
 
-  <div class="popup" id="popup">
+  <!-- <div class="popup" id="popup">
     <div class="popup__content">
       <div class="popup__left">
         <img src="assets/images/nat-11.jpeg" alt="" class="popup__img">
@@ -368,82 +401,11 @@
       </div>
     </div>
   </div>
-  <!-- 
-  <section class="grid-test">
-    <div class="row">
-      <div class="col-1-of-2">
-        Col 1 of 2
-      </div>
-      <div class="col-1-of-2">
-        Col 1 of 2
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-3">
-        Col 1 of 3
-      </div>
-      <div class="col-1-of-3">
-        Col 1 of 3
-      </div>
-      <div class="col-1-of-3">
-        Col 1 of 3
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-3">
-        Col 1 of 3
-      </div>
-      <div class="col-2-of-3">
-        Col 2 of 3
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-2-of-4">
-        Col 2 of 4
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-4">
-        Col 1 of 4
-      </div>
-      <div class="col-3-of-4">
-        Col 3 of 4
-      </div>
-    </div>
-  </section> -->
-
-
-
-
+  -->
 
 
   <!-- Custom Javascript -->
-  <!-- <script type="text/javascript" src="assets/javascript/main.js"></script> -->
+  <script type="text/javascript" src="assets/javascript/index.js"></script>
 
 </body>
 
